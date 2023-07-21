@@ -30,7 +30,7 @@ The code below shows the sample implementation of the component:
 </body>
 </html>
 ```
-Please note: Current version of the component only supports single image tracking. Sample target, used in this example can be found <a href="img/target.jpg">here</a>.
+Please note: Current version of the component only supports single image tracking. Sample target, used in this example can be found <a href="img/target.jpg">here</a>. In order to improve smoothness of tracking to the desired level, play with One Euro filter values.
 
 ### **Events Handling**
 The component has the following events:
