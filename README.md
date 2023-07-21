@@ -71,7 +71,8 @@ Please note that the work on this component is in progress. Future updates.
 * Adding interactive examples.
 
 ### **Tech Stack**
-The project is powered by AFrame, Three.js and WebAssembly (Emscripten, Asm.js). The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet.
+The project is powered by AFrame, Three.js and WebAssembly (Emscripten, Asm.js). One Euro Filter was taken/adapted from the following sources ( https://github.com/hiukim/mind-ar-js/blob/master/src/libs/one-euro-filter.js, https://jaantollander.com/post/noise-filtering-using-one-euro-filter/#mjx-eqn%3A1).
+The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet.
 
 ### **Demo**
 See demo of the component here: [Demo](https://webar-simple.glitch.me/)
