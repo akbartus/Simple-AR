@@ -31,6 +31,7 @@ The code below shows the sample implementation of the component:
 </html>
 ```
 Please note: Current version of the component only supports single image tracking. 
+Sample target, used in this example can be found <a href="img/target.jpg">here</a>.
 
 ### **Events Handling**
 The component has the following events:
