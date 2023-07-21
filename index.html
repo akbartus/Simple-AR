@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple AR - A Web based AR for A-Frame Framework</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+</head>
+<body>
+    <script src="dist/0.1.0/simple-ar.min.js" onload="onWasmLoaded();"></script>
+    <a-scene>
+        <a-entity simple-ar="src: target.jpg">
+            <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1"
+                material="src: target.jpg"></a-plane>
+        </a-entity>
+        <a-camera position="0 0 0"></a-camera>
+    </a-scene>
+</body>
+
+</html>
