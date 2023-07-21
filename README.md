@@ -53,4 +53,4 @@ The following shaders and passes were integrated into component and can be acces
 * Pass, Shader Pass, Mask Pass, Effect Composer, Render Pass, Pencil Lines Pass, Halftone Pass, Film Pass, Render Pixelated Pass, Glitch Pass, Unreal Bloom Pass, Output Pass, Clear Pass, Texture Pass, AfterImage Pass.
         
 ### **Demo**
-See demo of the component here: [Demo](https://post-processing.glitch.me/)
+See demo of the component here: [Demo](https://webar-simple.glitch.me/)
