@@ -69,7 +69,7 @@ Please note that the work on this component is in progress. Future updates.
 * Adding interactive examples.
 
 ### **Tech Stack**
-The project is powered by AFrame, Three.js and WebAssembly (Emscripten Asm.js). The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet.
+The project is powered by AFrame, Three.js and WebAssembly (Emscripten, Asm.js). The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet.
 
 ### **Demo**
 See demo of the component here: [Demo](https://webar-simple.glitch.me/)
