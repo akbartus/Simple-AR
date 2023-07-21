@@ -13,46 +13,30 @@ Simple AR is the component. In order to use it, attach "simple-ar" to a-entity. 
 
 The code below shows the sample implementation of the component:
 ```
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <title>A-Frame Component: Post-Processing</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/gh/akbartus/A-Frame-Component-Postprocessing/dist/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/akbartus/A-Frame-Component-Postprocessing/dist/post-processing.min.js"></script>
+    <title>Simple AR - A Web based AR for A-Frame</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
 </head>
 <body>
-    <a-scene post-processing="effect: bloom" >
-        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-        <a-entity light="type: directional; color: #fff;" position="1 1 1"></a-entity>
-        <a-sky color="#000"></a-sky> 
+    <script src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.0/simple-ar.min.js" onload="onWasmLoaded();"></script>
+    <a-scene>
+        <a-entity simple-ar="src: img/target.jpg">
+            <a-entity gltf-model="3d/Horse.glb" position="0 -0.5 0"rotation="0 90 0" scale="0.01 0.01 0.01"></a-entity>
+        </a-entity>
+        <a-camera position="0 0 0"></a-camera>
     </a-scene>
 </body>
 </html>
 ```
 
 ### **Updates**
-Please note that the work on this component is still in progress. Future updates will include:
-* Possibility of adding custom effects.
-* New effects, created by Three.js community.
+Please note that the work on this component is in progress. The future updates will be reflected here.
 
 ### **Tech Stack**
-The project is powered by AFrame and Three.js. The effects and corresponding examples were adapted from Three.js library as well as other sources:
-* Halftone, Pixelation, Glitch, Sobel, Dot Screen, Old Film, Afterimage - https://threejs.org/examples/?q=postprocessing.
-* Sketchy Pencil - https://tympanus.net/codrops/2022/11/29/sketchy-pencil-effect-with-three-js-post-processing/.
-* Volumetric light (God-rays) - https://github.com/abberg/three-volumetric-light.
-* Bad TV - https://github.com/felixturner/bad-tv-shader.
+The project is powered by AFrame, Three.js and WebAssembly (Emscripten Asm.js). The component is compatible with latest version of A-Frame (1.4.2). Tests with older version of A-Frame were not perfomed yet.
+The 3d model of a horse was developed by Артур Мигранов and taken via <a href="https://poly.pizza/m/b48xU1GsYOT">Poly Pizza</a>.
 
-Updated version of A-Frame (1.4.2) is used, which takes into account webXR. The updates to A-Frame and respective passes/shaders were made based on CodyJasonBennett's suggested changes to Three.js and taken from <a href="https://github.com/mrdoob/three.js/pull/26160">here</a> with indivudual changes made to <a href="https://github.com/CodyJasonBennett/three.js/commit/9719d00d36467508b4e36b8097908648e1f368b3">three.js</a> files. The VR mode was tested with Meta Quest 2 Headset. Tests using  other headsets are welcomed. 
-
-A small hack allowing the support of Three.js based post-processing in A-Frame, was taken from the following <a href="https://stackoverflow.com/questions/68991451/is-there-a-way-to-implement-the-three-js-effect-composer-into-aframe-with-vr-mod">source</a>.  
-
-The following shaders and passes were integrated into component and can be accessed when creating custom effects (separate attribute with custom-effect will be added in next release):
-* Copy Shader, Pencil Lines Material Shader, Halftone Shader, Film grain & scanlines shader, Vignette Shader, Gamma Correction Shader, Digital Glitch Shader, Luminosity Shader, Sobel Operator Shader, Luminosity High Pass Shader, Output Shader, RGB Shift Shader, Dot Screen Shader, VolumetericLightShader, Afterimage shader, BadTVShader, Static Shader.
-* Pass, Shader Pass, Mask Pass, Effect Composer, Render Pass, Pencil Lines Pass, Halftone Pass, Film Pass, Render Pixelated Pass, Glitch Pass, Unreal Bloom Pass, Output Pass, Clear Pass, Texture Pass, AfterImage Pass.
-        
 ### **Demo**
 See demo of the component here: [Demo](https://webar-simple.glitch.me/)
