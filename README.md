@@ -2,35 +2,12 @@
 <img src="img/screenshot.gif" title="screen capture" alt="screen capture" height="250">
 
 ### **Description / Rationale**
-Simple AR is a web-based image tracking library based on WebAssembly, which let's loading image targets without training. Unlike other web-based AR libraries it allows loading image targets without training and it is completely free!
-This is the A-Frame component for post-processing effects, which are based on the examples provided by Three.js and other sources (see Tech Stack section for more information). The component makes use of Effect Composer and lets compose effects in the same way as it is done in Three.js.
-
+Simple AR is a web-based image tracking library based on WebAssembly and made for A-Frame framework. Unlike other web-based AR libraries it allows loading image targets without training and it is completely free!
 
 ### **Instructions**
-In order to use the component attach "post-processing" to a-scene. The component has the following attributes: 
+Simple AR is the component. In order to use it, attach "simple-ar" to a-entity. The component has the following attributes (new attributes will be added in the process of development): 
 * <b>effect: { type: "string", default: "sketchy-pencil" }</b> - It allows to set the effect type. One of the following effects could be set: sketchy-pencil, halftone, old-film, pixel, glitch, sobel, bloom, dot-screen, volumetric-light, afterimage, bad-tv. 
-    
-* <b>halftoneParams: { type: "string", default: "shape: 1, radius: 6, rotateR: Math.PI / 12, rotateB: (Math.PI / 12) * 2, rotateG: (Math.PI / 12) * 3, scatter: 1, blending: 1, blendingMode: 1, greyscale: false, disable: false" }</b> - The parameters for halftone effect. Accepts the following in string format and is written together: shape, radius, rotateR, rotateB, rotateG, scatter, blending, blendingMode, greyscale, disable.
-    
-* <b>oldFilmParams: { type: "string", default: "grayscale: true, nIntensity: 0.3, sIntensity: 0.3, sCount: 256" }</b> - The parameters of old film effect. Accepts the following in string format and is written togeter: grayscale, nIntensity, sIntensity, sCount.
-
-* <b>pixelParams: { type: "string", default: "pixelSize: 12, normalEdgeStrength: 0.35, depthEdgeStrength: 0.4" }*</b> - The parameters of pixel effect. Accepts the following: pixelSize, normalEdgeStrength, depthEdgeStrength.
-
-* <b>glitchParams: { type: "string", default: "goWild: false, enabled: true" }</b> - The parameters of glitch effect. Accepts the following: goWild, enabled. 
-
-* <b>sobelParams: { type: "string", default: "enabled: true" }</b> - The parameters of Sobel effect. Accepts only "enabled" parameter.
-
-* <b>bloomParams: { type: "string", default: "threshold: 0, strength: 0.4, radius: 0, exposure: 1" }</b> - The parameters of bloom effect. Accepts the following: threshold, strength, radius and exposure.
-
-* <b>dotScreenParams: { type: "string", default: "scale: 4, angle: 90" }</b> - The parameters of dotscreen effect. Accepts the following: scale and angle. 
-
-* <b>volumetricLightParams: { type: "string", default: "decay: 0.95, density: 0.5, exposure: 0.2, samples: 50" }</b> - The parameters of volumetric light effect. Accepts the following: decay, density, exposure, samples.
-
-* <b>afterimageParams: { type: "string", default: "damp: 0.8" } </b> - The parameters of afterimage effect. Accepts only damp parameter. 
-
-* <b>badTVParams: { type: "string", default: "mute: true, show: true, distortion: 1.0, distortion2: 1.0, speed: 0.2, rollSpeed: 0" }*</b> - The parameters of bad TV effect. Accepts the following: mute, show, distortion, distortion2, speed, rollSpeed.
-
-<b>* Please note:</b> The individual effects of pixel and badTV do not work properly in VR mode yet.  
+ 
 
 The code below shows the sample implementation of the component:
 ```
