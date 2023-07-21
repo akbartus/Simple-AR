@@ -26,7 +26,7 @@ The code below shows the sample implementation of the component:
     <script src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.0/simple-ar.min.js" onload="onWasmLoaded();"></script>
     <a-scene>
         <a-entity simple-ar="src: img/target.jpg">
-            <a-torus></a-torus>
+            <a-torus scale="0.5 0.5 0.5"></a-torus>
         </a-entity>
         <a-camera position="0 0 0"></a-camera>
     </a-scene>
