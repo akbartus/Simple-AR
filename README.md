@@ -62,9 +62,10 @@ document.body.appendChild(pauseButton);
 
 ### **Updates**
 Please note that the work on this component is in progress. The future updates will be reflected here.
+* Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events.
 
 ### **Tech Stack**
-The project is powered by AFrame, Three.js and WebAssembly (Emscripten Asm.js). The component is compatible with latest version of A-Frame (1.4.2). Tests with older version of A-Frame were not perfomed yet.
+The project is powered by AFrame, Three.js and WebAssembly (Emscripten Asm.js). The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet.
 The 3d model of a horse was developed by Артур Мигранов and taken via <a href="https://poly.pizza/m/b48xU1GsYOT">Poly Pizza</a>.
 
 ### **Demo**
