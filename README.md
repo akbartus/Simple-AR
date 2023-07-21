@@ -31,6 +31,35 @@ The code below shows the sample implementation of the component:
 </html>
 ```
 
+### **Events Handling**
+The component has the following events:
+* <b>targetFound</b>: Triggered when the target image is found by Simple AR.
+```
+document.addEventListener("targetFound", function (event) {
+    console.log("Target found!");
+});
+```
+* <b>targetLost</b>: Triggered when the target image is lost by Simple AR.
+```
+document.addEventListener("targetLost", function (event) {
+    console.log("Target lost!");
+});
+```
+* <b>onVideoStarted</b>: Triggered when webcamera video is started.
+```
+document.addEventListener("onVideoStarted", () => {
+    console.log("video started!");
+});
+```
+* <b>arPause</b>: A toggle, which let's pause tracking system or unpause.
+```
+const pauseButton = document.createElement("button");
+pauseButton.setAttribute("style", "position: absolute; left:10px; top:10px; z-index:3");
+pauseButton.textContent = "Pause";
+pauseButton.addEventListener("click", arPause); // call here
+document.body.appendChild(pauseButton);
+```
+
 ### **Updates**
 Please note that the work on this component is in progress. The future updates will be reflected here.
 
