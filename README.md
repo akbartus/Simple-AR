@@ -75,7 +75,7 @@ Please note that the work on this library (component) is in progress. Future upd
 
 ### **Tech Stack**
 The project is powered by AFrame, Three.js and WebAssembly (Emscripten, Asm.js). One Euro Filter was taken/adapted from the following sources ( https://github.com/hiukim/mind-ar-js/blob/master/src/libs/one-euro-filter.js, https://jaantollander.com/post/noise-filtering-using-one-euro-filter/#mjx-eqn%3A1).
-The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet.
+The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet. The original sources used in creating the library (component) are: Joe Jacob's repositories related to <a href="https://github.com/tso996/cpp_to_html_video_renderer">cpp to html web assembly</a> and <a href="https://github.com/tso996/ImageTrackingDemo">Image Tracking Demo</a>.
 
 ### **Demo**
 See demo here: [Demo](https://webar-simple.glitch.me/)
