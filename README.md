@@ -60,6 +60,8 @@ pauseButton.textContent = "Pause";
 pauseButton.addEventListener("click", arPause); // call here
 document.body.appendChild(pauseButton);
 ```
+### **Version**
+Most current version of the component is 0.1.0.
 
 ### **Updates**
 Please note that the work on this component is in progress. Future updates.
