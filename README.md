@@ -2,10 +2,10 @@
 <img src="img/screenshot.gif" title="screen capture" alt="screen capture" width="250" style="text-align: center">
 
 ### **Description / Rationale**
-Simple AR is a web-based image tracking library based on WebAssembly and made for A-Frame framework. Unlike other web-based AR libraries it allows loading image targets without training, recognizes partially visible targets and it is completely free!
+Simple AR is a web-based image tracking library (component) based on WebAssembly and made for A-Frame framework. Unlike other web-based AR libraries it allows loading image targets without training, recognizes partially visible targets and it is completely free!
 
 ### **Instructions**
-Simple AR is the component. In order to use it, attach "simple-ar" to a-entity. The component has the following attributes (new attributes will be added in the process of development): 
+In order to use it, attach "simple-ar" to a-entity. The library (component) has the following attributes (new attributes will be added in the process of development): 
 * <b>src: { type: "string" }</b> - The URL or source of image target. Can be .jpg or .png file. 
 * <b>minCutOffValue: { type: "float", default: 0.01 }</b> - One Euro Filter related parameter for smoothing the tracking.
 * <b>betaValue: { type: "float", default: 0.1 }</b> - One Euro Filter related parameter for smoothing the tracking.
@@ -30,7 +30,7 @@ The code below shows the sample implementation of the component:
 </body>
 </html>
 ```
-Please note: Current version of the component only supports single image tracking. Sample target, used in this example can be found <a href="img/target.jpg">here</a>. In order to improve smoothness of tracking to the desired level, play with One Euro filter values.
+Please note: Current version only supports single image tracking. Sample target, used in this example can be found <a href="img/target.jpg">here</a>. In order to improve smoothness of tracking to the desired level, play with One Euro filter values.
 
 ### **Events Handling**
 The component has the following events:
@@ -61,10 +61,10 @@ pauseButton.addEventListener("click", arPause); // call here
 document.body.appendChild(pauseButton);
 ```
 ### **Version**
-Most current version of the component is 0.1.0.
+Most current version is 0.1.0.
 
 ### **Updates**
-Please note that the work on this component is in progress. Future updates.
+Please note that the work on this library (component) is in progress. Future updates.
 * Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events.
 * Adding runtime target image loading feature.
 * Adding a computer vision example for reading/segmenting texture of image target on a screen.
@@ -75,4 +75,4 @@ The project is powered by AFrame, Three.js and WebAssembly (Emscripten, Asm.js).
 The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet.
 
 ### **Demo**
-See demo of the component here: [Demo](https://webar-simple.glitch.me/)
+See demo here: [Demo](https://webar-simple.glitch.me/)
