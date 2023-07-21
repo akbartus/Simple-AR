@@ -6,8 +6,10 @@ Simple AR is a web-based image tracking library based on WebAssembly and made fo
 
 ### **Instructions**
 Simple AR is the component. In order to use it, attach "simple-ar" to a-entity. The component has the following attributes (new attributes will be added in the process of development): 
-* <b>effect: { type: "string", default: "sketchy-pencil" }</b> - It allows to set the effect type. One of the following effects could be set: sketchy-pencil, halftone, old-film, pixel, glitch, sobel, bloom, dot-screen, volumetric-light, afterimage, bad-tv. 
- 
+* <b>src: { type: "string" }</b> - The URL or source of image target. Can be .jpg or .png file. 
+* <b>minCutOffValue: { type: "float", default: 0.01 }</b> - One Euro Filter related parameter for smoothing the tracking.
+* <b>betaValue: { type: "float", default: 0.1 }</b> - One Euro Filter related parameter for smoothing the tracking.
+* <b>dCutOffValue: { type: "float", default: 0.001 }</b>- One Euro Filter related parameter for smoothing the tracking.
 
 The code below shows the sample implementation of the component:
 ```
