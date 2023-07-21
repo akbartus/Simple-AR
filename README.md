@@ -23,7 +23,7 @@ The code below shows the sample implementation of the component:
     <script src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.0/simple-ar.min.js" onload="onWasmLoaded();"></script>
     <a-scene>
         <a-entity simple-ar="src: img/target.jpg">
-            <a-entity gltf-model="3d/Horse.glb" position="0 -0.5 0"rotation="0 90 0" scale="0.01 0.01 0.01"></a-entity>
+            <a-torus></a-torus>
         </a-entity>
         <a-camera position="0 0 0"></a-camera>
     </a-scene>
