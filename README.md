@@ -30,6 +30,7 @@ The code below shows the sample implementation of the component:
 </body>
 </html>
 ```
+Please note: Current version of the component only supports single image tracking. 
 
 ### **Events Handling**
 The component has the following events:
@@ -63,6 +64,9 @@ document.body.appendChild(pauseButton);
 ### **Updates**
 Please note that the work on this component is in progress. The future updates will be reflected here.
 * Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events.
+* Adding runtime target image loading feature.
+* Adding a computer vision example for reading/segmenting texture of image target on a screen.
+* Adding interactive examples.
 
 ### **Tech Stack**
 The project is powered by AFrame, Three.js and WebAssembly (Emscripten Asm.js). The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet.
