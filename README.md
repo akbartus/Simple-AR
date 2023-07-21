@@ -62,7 +62,7 @@ document.body.appendChild(pauseButton);
 ```
 
 ### **Updates**
-Please note that the work on this component is in progress. The future updates will be reflected here.
+Please note that the work on this component is in progress. Future updates.
 * Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events.
 * Adding runtime target image loading feature.
 * Adding a computer vision example for reading/segmenting texture of image target on a screen.
