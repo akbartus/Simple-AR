@@ -56,7 +56,7 @@ document.addEventListener("onVideoStarted", () => {
     console.log("video started!");
 });
 ```
-* <b>arPause</b>: A toggle, which let's pause tracking system or unpause.
+* <b>arPause</b>: A toggle, which lets pause tracking system or unpause.
 ```
 const pauseButton = document.createElement("button");
 pauseButton.setAttribute("style", "position: absolute; left:10px; top:10px; z-index:3");
@@ -64,7 +64,7 @@ pauseButton.textContent = "Pause";
 pauseButton.addEventListener("click", arPause); // call here
 document.body.appendChild(pauseButton);
 ```
-* <b>onDistance</b>: Sho distance between camera and image target.
+* <b>onDistance</b>: Show distance between camera and image target.
 ```
 document.addEventListener("onDistance", (event) => {
  const distance = event.detail;
