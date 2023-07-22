@@ -24,7 +24,7 @@ The code below shows the sample implementation of the component:
   </head>
   <body>
     <script
-      src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.1/simple-ar.min.js"
+      src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.2/simple-ar.min.js"
       onload="onWasmLoaded();"
     ></script>
     <a-scene>
@@ -37,7 +37,7 @@ The code below shows the sample implementation of the component:
           material="src: https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg"
         ></a-plane>
       </a-entity>
-      <a-camera position="-0.25 -0.25 0"></a-camera>
+      <a-camera position="0 0 0"></a-camera>
     </a-scene>
   </body>
 </html>
