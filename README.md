@@ -18,21 +18,30 @@ The code below shows the sample implementation of the component:
 ```
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Simple AR - A Web based AR for A-Frame</title>
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.1/simple-ar.min.js" onload="onWasmLoaded();"></script>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.1/simple-ar.min.js"
+      onload="onWasmLoaded();"
+    ></script>
     <a-scene>
-        <a-entity simple-ar="src: img/target.jpg">
-             <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1"
-                material="src: https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg"></a-plane>
-        </a-entity>
-        <a-camera position="0 0 0"></a-camera>
+      <a-entity simple-ar="src: img/target.jpg; minCutOffValue: 1; betaValue:0.1;">
+        <a-plane
+          position="0 0 0"
+          rotation="0 0 0"
+          width="1"
+          height="1"
+          material="src: https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg"
+        ></a-plane>
+      </a-entity>
+      <a-camera position="-0.25 -0.25 0"></a-camera>
     </a-scene>
-</body>
+  </body>
 </html>
+
 ```
 Please note: Current version only supports single image tracking. Sample target, used in this example can be found <a href="img/target.jpg">here</a>. In order to improve smoothness of tracking to the desired level, play with One Euro filter values.
 
