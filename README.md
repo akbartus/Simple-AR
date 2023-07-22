@@ -23,7 +23,7 @@ The code below shows the sample implementation of the component:
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.0/simple-ar.min.js" onload="onWasmLoaded();"></script>
+    <script src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.1/simple-ar.min.js" onload="onWasmLoaded();"></script>
     <a-scene>
         <a-entity simple-ar="src: img/target.jpg">
              <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1"
