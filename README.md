@@ -29,7 +29,7 @@ The code below shows the sample implementation of the component:
              <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1"
                 material="src: https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg"></a-plane>
         </a-entity>
-        <a-camera position="0 0 0"></a-camera>
+        <a-camera position="0 0 -1"></a-camera>
     </a-scene>
 </body>
 </html>
