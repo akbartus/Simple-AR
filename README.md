@@ -80,6 +80,7 @@ Please note that the work on this library (component) is in progress. Future upd
 * <del>Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events</del>.
 * <del>Fixing rotation bug</del>.
 * Fixing positioning bug.
+* Fixing centering issue.
 * Adding runtime target image loading feature.
 * Adding a computer vision example for reading/segmenting texture of image target on a screen.
 * Adding interactive examples.
