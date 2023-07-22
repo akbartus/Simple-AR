@@ -85,7 +85,7 @@ document.addEventListener("onDistance", (event) => {
 Most current version is 0.1.2.
 
 ### **Updates / Bug Fixes**
-Please note that the work on this library (component) is in progress. Future updates.
+Please note that the work on this library (component) is in progress. Future updates:
 * <del>Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events</del>.
 * <del>Fixing rotation bug</del>.
 * <del>Fixing positioning bug</del>.
