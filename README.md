@@ -26,7 +26,8 @@ The code below shows the sample implementation of the component:
     <script src="https://cdn.jsdelivr.net/gh/akbartus/Simple-AR/dist/0.1.0/simple-ar.min.js" onload="onWasmLoaded();"></script>
     <a-scene>
         <a-entity simple-ar="src: img/target.jpg">
-            <a-torus scale="0.5 0.5 0.5"></a-torus>
+             <a-plane position="0 0 0" rotation="0 0 0" width="1" height="1"
+                material="src: https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg"></a-plane>
         </a-entity>
         <a-camera position="0 0 0"></a-camera>
     </a-scene>
@@ -64,11 +65,12 @@ pauseButton.addEventListener("click", arPause); // call here
 document.body.appendChild(pauseButton);
 ```
 ### **Version**
-Most current version is 0.1.0.
+Most current version is 0.1.1.
 
 ### **Updates / Bug Fixes**
 Please note that the work on this library (component) is in progress. Future updates.
-* Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events.
+* <del>Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events</del>.
+* <del>Fixing rotation bug</del>.
 * Adding runtime target image loading feature.
 * Adding a computer vision example for reading/segmenting texture of image target on a screen.
 * Adding interactive examples.
