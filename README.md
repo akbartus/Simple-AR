@@ -15,7 +15,7 @@ In order to use it, attach "simple-ar" to a-entity. The library (component) has 
 * <b>dCutOffValue: { type: "float", default: 0.001 }</b>- One Euro Filter related parameter for smoothing the tracking.
 
 The code below shows the sample implementation of the component:
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -48,25 +48,25 @@ Please note: Current version only supports single image tracking. Sample target,
 ### **Events Handling**
 The component has the following events:
 * <b>targetFound</b>: Triggered when the target image is found by Simple AR.
-```
+```js
 document.addEventListener("targetFound", function (event) {
     console.log("Target found!");
 });
 ```
 * <b>targetLost</b>: Triggered when the target image is lost by Simple AR.
-```
+```js
 document.addEventListener("targetLost", function (event) {
     console.log("Target lost!");
 });
 ```
 * <b>onVideoStarted</b>: Triggered when webcamera video is started.
-```
+```js
 document.addEventListener("onVideoStarted", () => {
     console.log("video started!");
 });
 ```
 * <b>arPause</b>: A toggle, which lets pause tracking system or unpause.
-```
+```js
 const pauseButton = document.createElement("button");
 pauseButton.setAttribute("style", "position: absolute; left:10px; top:10px; z-index:3");
 pauseButton.textContent = "Pause";
@@ -74,7 +74,7 @@ pauseButton.addEventListener("click", arPause); // call here
 document.body.appendChild(pauseButton);
 ```
 * <b>onDistance</b>: Show distance between camera and image target.
-```
+```js
 document.addEventListener("onDistance", (event) => {
  const distance = event.detail;
  console.log("Distance:", distance);
