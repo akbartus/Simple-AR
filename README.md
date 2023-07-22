@@ -79,6 +79,7 @@ Most current version is 0.1.1.
 Please note that the work on this library (component) is in progress. Future updates.
 * <del>Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events</del>.
 * <del>Fixing rotation bug</del>.
+* Fixing positioning bug.
 * Adding runtime target image loading feature.
 * Adding a computer vision example for reading/segmenting texture of image target on a screen.
 * Adding interactive examples.
