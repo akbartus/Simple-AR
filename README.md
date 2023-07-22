@@ -64,6 +64,14 @@ pauseButton.textContent = "Pause";
 pauseButton.addEventListener("click", arPause); // call here
 document.body.appendChild(pauseButton);
 ```
+* <b>onDistance</b>: Sho distance between camera and image target.
+```
+document.addEventListener("onDistance", (event) => {
+ const distance = event.detail;
+ console.log("Distance:", distance);
+});
+```
+
 ### **Version**
 Most current version is 0.1.1.
 
