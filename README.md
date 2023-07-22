@@ -66,7 +66,7 @@ document.body.appendChild(pauseButton);
 ### **Version**
 Most current version is 0.1.0.
 
-### **Updates**
+### **Updates / Bug Fixes**
 Please note that the work on this library (component) is in progress. Future updates.
 * Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events.
 * Adding runtime target image loading feature.
