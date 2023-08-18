@@ -91,6 +91,7 @@ Please note that the work on this library (component) is in progress. Future upd
 * <del>Fixing positioning bug</del>.
 * <del>Fixing centering issue</del>.
 * <del>Full Babylon.js example created</del>.
+* * <del>Full Three.js example created</del>.
 * Adding runtime target image loading feature.
 * Adding a computer vision example for reading/segmenting texture of image target on a screen.
 * Adding interactive examples.
