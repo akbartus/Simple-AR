@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple AR: Three.js Example</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div id="container">
+    <canvas id="canvasImageToDetect" width="320" height="240" style="display:none"></canvas>
+    <video class="video-canvas-render" id="video" playsinline autoplay></video>
+    <canvas class="video-canvas-render" id="renderCanvas"></canvas>
+  </div>
+  <script src="main.js" type="text/javascript" onload="onWasmLoaded();"></script>
+</body>
+
+</html>
