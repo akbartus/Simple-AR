@@ -101,4 +101,5 @@ The project is powered by AFrame, Three.js and WebAssembly (Emscripten, Asm.js).
 The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet. The original source used in creating the library (component) is Joe Jacob's repository related to <a href="https://github.com/tso996/cpp_to_html_video_renderer">cpp to html web assembly</a>.
 
 ### **Demo**
-See demo here: [Demo](https://webar-simple.glitch.me/)
+See A-Frame demo here: [Demo](https://webar-simple.glitch.me/)
+See ThreeJs demo here: [Demo](https://simplear-threejs.glitch.me/)
