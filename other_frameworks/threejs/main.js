@@ -374,7 +374,7 @@ var createScene = function () {
 
   var light = new THREE.HemisphereLight(0xffffff, 0x000000, 0.8);
 
-  var size = 0.8;
+  var size = 0.5;
   var geometry = new THREE.BoxGeometry(size, size, size);
   var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
   var box = new THREE.Mesh(geometry, material);
