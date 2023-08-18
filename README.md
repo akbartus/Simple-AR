@@ -102,4 +102,5 @@ The component is compatible with latest version of A-Frame (1.4.2). Tests with o
 
 ### **Demo**
 See A-Frame demo here: [Demo](https://webar-simple.glitch.me/)
+
 See ThreeJs demo here: [Demo](https://simplear-threejs.glitch.me/)
