@@ -20,7 +20,7 @@ The code below shows the sample implementation of the component:
 <html>
   <head>
     <title>Simple AR - A Web based AR for A-Frame</title>
-    <script src="https://cdn.jsdelivr.net/gh/akbartus/A-Frame-Occlusion-Component/js/occlusion-component.js"></script>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
   </head>
   <body>
     <script
