@@ -2,19 +2,19 @@
 <img src="img/screenshot.gif" title="screen capture" alt="screen capture" width="250" style="text-align: center">
 
 ### **Description / Rationale**
-Simple AR is a web-based image tracking library (component) based on WebAssembly and made for A-Frame framework. Unlike other web-based AR libraries it: 
+Simple AR is a web-based image tracking library (platform) based on WebAssembly and made for A-Frame framework. Unlike other web-based AR libraries it: 
 * allows loading image targets without training;
 * recognizes partially visible targets;
 * can recognize target at a greater distance. 
 
 ### **Instructions**
-In order to use it, attach "simple-ar" to a-entity. The library (component) has the following attributes (new attributes will be added in the process of development): 
+In order to use it, attach "simple-ar" to a-entity. The library (platform) has the following attributes (new attributes will be added in the process of development): 
 * <b>src: { type: "string" }</b> - The URL or source of image target. Can be .jpg or .png file. 
 * <b>minCutOffValue: { type: "float", default: 0.01 }</b> - One Euro Filter related parameter for smoothing the tracking.
 * <b>betaValue: { type: "float", default: 0.1 }</b> - One Euro Filter related parameter for smoothing the tracking.
 * <b>dCutOffValue: { type: "float", default: 0.001 }</b>- One Euro Filter related parameter for smoothing the tracking.
 
-The code below shows the sample implementation of the component:
+The code below shows the sample implementation:
 ```html
 <!DOCTYPE html>
 <html>
@@ -46,7 +46,7 @@ The code below shows the sample implementation of the component:
 Please note: Current version only supports single image tracking. Sample target, used in this example can be found <a href="img/target.jpg">here</a>. In order to improve smoothness of tracking to the desired level, play with One Euro filter values.
 
 ### **Events Handling**
-The component has the following events:
+The library has the following events:
 * <b>targetFound</b>: Triggered when the target image is found by Simple AR.
 ```js
 document.addEventListener("targetFound", function (event) {
@@ -85,7 +85,7 @@ document.addEventListener("onDistance", (event) => {
 Most current version is 0.1.2.
 
 ### **Updates / Bug Fixes**
-Please note that the work on this library (component) is in progress. Future updates:
+Please note that the work on this library (platform) is in progress. Future updates:
 * <del>Adding "onDistance" event, which will let measuring distance between camera and AR target and trigger interactive events</del>.
 * <del>Fixing rotation bug</del>.
 * <del>Fixing positioning bug</del>.
@@ -98,8 +98,8 @@ Please note that the work on this library (component) is in progress. Future upd
 * Adding Unity support (Unity WebGL exporter for Simple AR) 
 
 ### **Tech Stack**
-The project is powered by AFrame, Three.js and WebAssembly (Emscripten). One Euro Filter was taken/adapted from the following sources ( https://github.com/hiukim/mind-ar-js/blob/master/src/libs/one-euro-filter.js, https://jaantollander.com/post/noise-filtering-using-one-euro-filter/#mjx-eqn%3A1).
-The component is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet.
+The library(platform) is powered by AFrame, Three.js and WebAssembly (Emscripten). One Euro Filter was taken/adapted from the following sources ( https://github.com/hiukim/mind-ar-js/blob/master/src/libs/one-euro-filter.js, https://jaantollander.com/post/noise-filtering-using-one-euro-filter/#mjx-eqn%3A1).
+The library(platform) is compatible with latest version of A-Frame (1.4.2). Tests with older versions of A-Frame were not perfomed yet.
 
 Example implementation of Simple AR is also given for Three.js and Babylon.js (see "other_frameworks" folder).   
 
