@@ -110,4 +110,4 @@ See ThreeJs demo here: [Demo](https://simplear-threejs.glitch.me/)
 
 See BabylonJs demo here: [Demo](https://simplear-babylonjs.glitch.me/)
 
-See a computer vision example for reading/segmenting texture of image target on a screen here: [Demo](https://webarcoloring-simplear.glitch.me/). For further guidance refer <a href="https://github.com/akbartus/WebAR-Coloring">to this repository.</a>  
+See a computer vision example for reading/segmenting texture of image target on a screen here: [Demo](https://webarcoloring-simplear.glitch.me/). Get image target <a href="https://github.com/akbartus/WebAR-Coloring/blob/main/img/target_3d.jpg">here</a>. For further guidance refer <a href="https://github.com/akbartus/WebAR-Coloring">to this repository.</a>  
