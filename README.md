@@ -93,7 +93,7 @@ Please note that the work on this library (platform) is in progress. Future upda
 * <del>Full Babylon.js example created</del>.
 * <del>Full Three.js example created</del>.
 * Adding runtime target image loading feature.
-* Adding a computer vision example for reading/segmenting texture of image target on a screen.
+* <del>Adding a computer vision example for reading/segmenting texture of image target on a screen.</del>
 * Adding interactive examples.
 * Adding Unity support (Unity WebGL exporter for Simple AR) 
 
@@ -109,3 +109,5 @@ See A-Frame demo here: [Demo](https://webar-simple.glitch.me/)
 See ThreeJs demo here: [Demo](https://simplear-threejs.glitch.me/)
 
 See BabylonJs demo here: [Demo](https://simplear-babylonjs.glitch.me/)
+
+See a computer vision example for reading/segmenting texture of image target on a screen here: [Demo](https://webarcoloring-simplear.glitch.me/). For further guidance refer <a href="https://github.com/akbartus/WebAR-Coloring">to this repository.</a>  
