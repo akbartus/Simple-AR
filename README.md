@@ -2,7 +2,7 @@
 <img src="img/screenshot.gif" title="screen capture" alt="screen capture" width="250" style="text-align: center">
 
 ### **Description / Rationale**
-Simple AR is a web-based image tracking library (platform) based on WebAssembly and made for A-Frame framework. Unlike other web-based AR libraries it: 
+Simple AR is a web-based image tracking library (platform) based on WebAssembly. Unlike other web-based AR libraries it: 
 * allows loading image targets without training;
 * recognizes partially visible targets;
 * can recognize target at a greater distance. 
