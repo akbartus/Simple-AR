@@ -95,7 +95,8 @@ Please note that the work on this library (platform) is in progress. Future upda
 * Adding runtime target image loading feature.
 * <del>Adding a computer vision example for reading/segmenting texture of image target on a screen.</del>
 * Adding interactive examples.
-* Adding Unity support (Unity WebGL exporter) 
+* Adding Unity support (Unity WebGL exporter).
+* Adding React example.
 
 ### **Tech Stack**
 The library(platform) is powered by AFrame, Three.js and WebAssembly (Emscripten). One Euro Filter was taken/adapted from the following sources ( https://github.com/hiukim/mind-ar-js/blob/master/src/libs/one-euro-filter.js, https://jaantollander.com/post/noise-filtering-using-one-euro-filter/#mjx-eqn%3A1).
